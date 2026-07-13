@@ -186,6 +186,35 @@
   .frk .sticky a{padding:13px 16px;font-size:.9rem}
 }
 
+
+/* ===== PC最適化 ===== */
+@media(min-width:821px){
+  .frk{font-size:17.5px}
+  .frk .hero .ph{min-height:520px}
+  .frk .hero .txt{padding:64px 48px}
+  .frk .hero h2{font-size:2.9rem}
+  .frk .sec{padding:76px 12px}
+  .frk .split{gap:48px}
+  .frk .figure:hover img,.frk .split img{transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+  .frk .split img:hover{transform:scale(1.02)}
+  .frk .card{transition:transform .3s,box-shadow .3s}
+  .frk .card:hover{transform:translateY(-4px);box-shadow:0 20px 44px -24px rgba(42,34,48,.4)}
+  .frk .plan{transition:transform .3s,box-shadow .3s}
+  .frk .plan:hover{transform:translateY(-4px)}
+  .frk .plan a:hover{filter:brightness(1.06)}
+  .frk .aprow img{transition:transform .3s}
+  .frk .aprow img:hover{transform:scale(1.06)}
+  /* PCは右下にフローティングCTA（スクロール中も常に買える） */
+  .frk .float{position:fixed;right:26px;bottom:26px;z-index:9999;display:flex;align-items:center;gap:14px;
+    background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border:1px solid var(--hair);
+    border-radius:4px;padding:12px 14px 12px 18px;box-shadow:0 18px 44px -20px rgba(42,34,48,.5)}
+  .frk .float .t{font-size:.76rem;color:var(--soft);line-height:1.4}
+  .frk .float .t b{display:block;font-family:"Hiragino Mincho ProN",serif;color:var(--ink);font-size:1.15rem}
+  .frk .float a{background:linear-gradient(180deg,var(--glow),var(--resin));color:#2b1a05!important;
+    text-decoration:none;font-weight:800;padding:13px 22px;border-radius:3px;white-space:nowrap;font-size:.92rem}
+}
+@media(max-width:820px){ .frk .float{display:none} }
+
 </style>
 
 <div class="frk">
@@ -428,6 +457,11 @@
 
 
   <div class="tailpad"></div>
+
+  <div class="float">
+    <div class="t">イエメン産 乳香・30日サポート<b>¥2,980〜</b></div>
+    <a href="#frk-buy">サイズを選ぶ</a>
+  </div>
 
   <div class="sticky">
     <div class="t">イエメン産 乳香・30日サポート<b>¥2,980〜</b></div>
